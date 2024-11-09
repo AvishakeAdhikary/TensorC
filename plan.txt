@@ -1,0 +1,23 @@
+TensorC/
+├── src/                # Source files (.c)
+│   ├── core.c          # Core tensor functionality (e.g., tensor creation, destruction)
+│   ├── operations.c    # Operations on tensors (e.g., addition, multiplication)
+│   ├── autograd.c      # (Optional) Autograd implementation
+│   ├── utils.c         # Utility functions (e.g., shape checking, memory management)
+│   └── tensor.c        # Core tensor implementation (e.g., tensor structure handling)
+├── include/            # Public headers (.h) for users
+│   ├── TensorC.h       # Main header file for users
+│   ├── core.h          # Header for core tensor functionality
+│   ├── operations.h    # Header for operations
+│   ├── autograd.h      # (Optional) Header for autograd system
+│   ├── utils.h         # Header for utilities
+│   └── tensor.h        # Header for tensor-related definitions
+├── examples/           # Example code for users
+│   └── basic_example.c
+├── tests/              # Unit tests
+│   ├── test_tensor.c
+│   ├── test_operations.c
+│   └── test_autograd.c # (Optional)
+├── CMakeLists.txt      # Build system for CMake
+├── Makefile            # Build system for Make
+└── README.md           # Documentation
