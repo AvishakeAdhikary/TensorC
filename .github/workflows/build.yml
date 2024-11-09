@@ -1,0 +1,28 @@
+name: Build and Test TensorC
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up CMake
+        uses: cmake-actions/setup-cmake@v1
+
+      - name: Build TensorC
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make
+          make test
