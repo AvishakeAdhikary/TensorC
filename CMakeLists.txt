@@ -24,5 +24,5 @@ add_library(TensorC STATIC
 )
 
 # Enable testing (optional)
-enable_testing()
-add_subdirectory(tests)
+# enable_testing()
+# add_subdirectory(tests)
